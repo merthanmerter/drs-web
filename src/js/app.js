@@ -11,7 +11,6 @@ var isIE = /*@cc_on!@*/ false || !!document.documentMode;
 
 window.addEventListener("DOMContentLoaded", () => {
 
-    window.location.reload()
 
     if (isFirefox || isIE) {
 
