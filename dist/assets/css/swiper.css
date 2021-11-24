@@ -17,7 +17,7 @@
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #13a0e5;
+  --swiper-theme-color: white;
 }
 .swiper {
   margin-left: auto;

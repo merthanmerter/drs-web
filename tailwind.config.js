@@ -1,9 +1,11 @@
-const production = process.env.NODE_ENV === "production";
-const mode = production ? "jit" : false;
+// const production = process.env.NODE_ENV === "production";
+// const mode = production ? "jit" : false;
 
 module.exports = {
-  mode: mode,
-  purge: [],
+  // mode: mode,
+  purge: [
+    './dist/**/*.html'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     container: {
@@ -44,6 +46,10 @@ module.exports = {
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
       },
+      backgroundImage: {
+        'hero-1': "url('../img/bg-hero-1.png')",
+        'hero-2': "url('../img/bg-hero-2.png')",
+      }
     },
   },
   variants: {
