@@ -28,20 +28,28 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     const btn = document.getElementById("toggler");
+    const btnStyle = document.getElementById("togglerStyle");
     const menu = document.getElementById("mobile-menu");
 
     btn.addEventListener("click", () => {
 
         if (!mobileMenuState) {
+            
             menu.classList.toggle('top-16')
             menu.classList.toggle('-top-96')
-            mobileMenuState = true    
+            mobileMenuState = true
+            btnStyle.setAttribute('d', 'M6 18L18 6M6 6l12 12')
+
         } else {
+
             menu.classList.toggle('top-16')
             menu.classList.toggle('-top-96')
+            btnStyle.setAttribute('d', 'M4 6h16M4 12h16M4 18h16')
+            mobileMenuState = false
+            
         }
 
     });
 
-    require('@themesberg/flowbite') 
+    require('@themesberg/flowbite')
 })
