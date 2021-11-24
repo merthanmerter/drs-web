@@ -7,13 +7,19 @@
 @tailwind utilities;
 
 @layer base {
+  
   /* p,
   span,
   sub,
   sup {
     @apply text-gray-600;
   } */
+
   a {
-    @apply text-current text-gray-600 transition-colors fill-current hover:text-drs-blue;
+    @apply transition-colors fill-current hover:text-drs-blue;
+  }
+
+  main {
+    @apply relative pt-16;
   }
 }

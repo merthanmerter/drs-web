@@ -12,6 +12,8 @@ var isIE = /*@cc_on!@*/ false || !!document.documentMode;
 window.addEventListener("DOMContentLoaded", () => {
 
 
+    mobileMenuState = false
+
     if (isFirefox || isIE) {
 
         document.getElementsByName('fixMozBlurNav')[0].classList.replace('bg-opacity-75', 'bg-opacity-100')
@@ -29,8 +31,15 @@ window.addEventListener("DOMContentLoaded", () => {
     const menu = document.getElementById("mobile-menu");
 
     btn.addEventListener("click", () => {
-        menu.classList.toggle('top-16')
-        menu.classList.toggle('-top-96')
+
+        if (!mobileMenuState) {
+            menu.classList.toggle('top-16')
+            menu.classList.toggle('-top-96')
+            mobileMenuState = true    
+        } else {
+            menu.classList.toggle('top-16')
+            menu.classList.toggle('-top-96')
+        }
 
     });
 
