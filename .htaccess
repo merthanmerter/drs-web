@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /data/
+RewriteCond %{REQUEST_URI} products
+RewriteRule  ^datasheets    products.html    [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.html [QSA,L]
+#AuthType Basic
+#AuthName "restricted area"
+#AuthUserFile /home/wwwmoxsy/public_html/data/.htpasswd
+#require valid-user
