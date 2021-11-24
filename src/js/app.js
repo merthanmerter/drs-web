@@ -28,7 +28,9 @@ window.addEventListener("DOMContentLoaded", () => {
     const menu = document.getElementById("mobile-menu");
 
     btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
+        menu.classList.toggle('top-16')
+        menu.classList.toggle('-top-96')
+
     });
 
     require('@themesberg/flowbite') 
