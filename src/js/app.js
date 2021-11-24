@@ -11,14 +11,8 @@ var isIE = /*@cc_on!@*/ false || !!document.documentMode;
 window.addEventListener("DOMContentLoaded", () => {
 
     if (isFirefox || isIE) {
-        
-        fixMozBlurHero = document.getElementsByName('fixMozBlurHero')
-        document.getElementsByName('fixMozBlurNav')[0].classList.replace('bg-opacity-75', 'bg-opacity-100')
 
-        fixMozBlurHero.forEach(el => {
-            el.classList.remove('bg-white', 'bg-opacity-20', 'backdrop-filter', 'backdrop-blur-md')
-            el.classList.add('bg-drs-blue')
-        })
+        document.getElementsByName('fixMozBlurNav')[0].classList.replace('bg-opacity-75', 'bg-opacity-100')
     }
 
     let swiper = new Swiper(".Swiper", {

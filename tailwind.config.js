@@ -49,7 +49,11 @@ module.exports = {
       backgroundImage: {
         'hero-1': "url('../img/bg-hero-1.png')",
         'hero-2': "url('../img/bg-hero-2.png')",
-      }
+      },
+      minHeight: {
+        'half-screen': '50vh',
+        '75vh': '75vh',
+      },
     },
   },
   variants: {
