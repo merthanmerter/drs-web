@@ -8,6 +8,7 @@ var isFirefox = typeof InstallTrigger !== 'undefined';
 var isIE = /*@cc_on!@*/ false || !!document.documentMode;
 
 
+
 window.addEventListener("DOMContentLoaded", () => {
 
     if (isFirefox || isIE) {
@@ -23,4 +24,12 @@ window.addEventListener("DOMContentLoaded", () => {
         },
     });
 
+    const btn = document.getElementById("toggler");
+    const menu = document.getElementById("mobile-menu");
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+
+    require('@themesberg/flowbite') 
 })

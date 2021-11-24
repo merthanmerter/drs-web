@@ -69,5 +69,6 @@ module.exports = {
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/forms'),
     require('tailwind-scrollbar'),
+    require('@themesberg/flowbite/plugin'),
   ],
 }

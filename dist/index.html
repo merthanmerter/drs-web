@@ -12,6 +12,7 @@
     <script src="assets/js/bundle.min.js"></script>
     <link rel="stylesheet" href="assets/css/swiper.css" />
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="../path/to/@themesberg/flowbite/dist/flowbite.bundle.js"></script>
     <!--/Styles-->
 
     <title>dRS</title>
@@ -38,7 +39,7 @@
                         transform="translate(-193 -229.94)" />
                 </svg>
 
-                <ul class="hidden gap-8 lg:flex">
+                <ul class="hidden gap-6 lg:flex">
                     <a href="#" class=" hover:text-drs-blue">
                         <li>Products</li>
                     </a>
@@ -51,11 +52,71 @@
                     <a href="#" class=" hover:text-drs-blue">
                         <li>Company</li>
                     </a>
-                    <a href="#" class=" hover:text-drs-blue">
-                        <li>Contact</li>
+                    <a href="">
+                        <li data-tooltip-target="tooltip-bottom-downloads" data-tooltip-placement="bottom"
+                            type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                        </li>
                     </a>
+                    <div id="tooltip-bottom-downloads" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity shadow-sm opacity-0 bg-drs-blue">
+                        Downloads
+                    </div>
+                    <a href="#">
+                        <li data-tooltip-target="tooltip-bottom-contact" data-tooltip-placement="bottom" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </li>
+                    </a>
+                    <div id="tooltip-bottom-contact" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity shadow-sm opacity-0 bg-drs-blue">
+                        Contact
+                    </div>
+                </ul>
+
+                <button class="lg:hidden focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" id="toggler" fill="none" viewBox="0 0 24 24"
+                        stroke="#13a0e5">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="hidden" id="mobile-menu">
+                <ul class="text-center">
+                    <li>
+                        <a href="#" class="block px-2 py-4 text-lg transition duration-300 bg-white">Products</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-2 py-4 text-lg transition duration-300 bg-white">Quality</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-2 py-4 text-lg transition duration-300 bg-white">Digital Solutions</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-2 py-4 text-lg transition duration-300 bg-white">Company</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-2 py-4 text-lg transition duration-300 bg-white">Downloads</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-2 py-4 text-lg transition duration-300 bg-white">Contact</a>
+                    </li>
                 </ul>
             </div>
+
+            <script>
+
+            </script>
+
         </nav>
     </header>
 
@@ -72,9 +133,10 @@
                                     src="https://www.heroal.de/systeme/systeme_1/sonnenschutz_1/heroal_vs_1/heroal_vs_z_4/heroal-VS-Z-verputzt_1920x700.jpg"
                                     alt="">
                             </figure>
-                            <div 
+                            <div
                                 class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full gap-4 px-6 text-center bg-opacity-75 lg:bg-opacity-100 bg-drs-blue lg:text-left lg:items-start lg:px-16 lg:w-1/2">
-                                <p class="text-4xl font-bold text-white xl:whitespace-nowrap">Blinds installed outside</p>
+                                <p class="text-4xl font-bold text-white xl:whitespace-nowrap">Blinds installed outside
+                                </p>
                                 <p class="text-xl text-white">With textile sun shading from heroal, even
                                     large glass surfaces are optimally protected from the sun, heat and UV rays.
                                 </p>
@@ -90,7 +152,7 @@
                                     src="https://www.heroal.de/B2C/Images/Stage/Architektenhaus-heroal-Produkte_1920x700.jpg"
                                     alt="">
                             </figure>
-                            <div 
+                            <div
                                 class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full gap-4 px-6 text-center bg-opacity-75 lg:bg-opacity-100 bg-drs-blue lg:text-left lg:items-start lg:px-16 lg:w-1/2">
                                 <p class="text-4xl font-bold text-white xl:whitespace-nowrap">The best quality for your
                                     home </p>
@@ -112,7 +174,8 @@
         <section class="pt-16">
             <div class="container">
                 <div class="w-full lg:w-2/3">
-                    <h1 class="w-full pb-5 text-2xl lg:w-2/3">Windows, doors, facades, shutters, sunshades, garage doors and
+                    <h1 class="w-full pb-5 text-2xl lg:w-2/3">Windows, doors, facades, shutters, sunshades, garage doors
+                        and
                         canopies by
                         drS
                         Aluminium Systems.
@@ -422,7 +485,8 @@
                                 </div>
                                 <div class="py-1">
 
-                                    <p class="line-clamp-4 lg:line-clamp-none">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
+                                    <p class="line-clamp-4 lg:line-clamp-none">Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Voluptatem
                                         mollitia error dolore quo, veniam similique sequi, quibusdam deleniti explicabo
                                         blanditiis voluptate repellendus quos rerum! Repellendus dignissimos accusamus
                                         aliquid tenetur! Vero suscipit a repellat aperiam hic laborum itaque soluta cum?
@@ -445,7 +509,8 @@
                                     <h3 class="pt-2 text-lg font-bold">Villa in Sint-Martens-Latem </h3>
                                 </div>
                                 <div class="py-1">
-                                    <p class="line-clamp-4 lg:line-clamp-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officia
+                                    <p class="line-clamp-4 lg:line-clamp-none">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Labore officia
                                         neque minima similique provident ut asperiores voluptas, reprehenderit
                                         doloremque.
                                         Vero!</p>
@@ -550,7 +615,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
