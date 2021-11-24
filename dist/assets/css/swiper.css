@@ -285,11 +285,11 @@
 .swiper-pagination-bullet {
   width: var(
     --swiper-pagination-bullet-width,
-    var(--swiper-pagination-bullet-size, 1.5rem)
+    var(--swiper-pagination-bullet-size, 1.2rem)
   );
   height: var(
     --swiper-pagination-bullet-height,
-    var(--swiper-pagination-bullet-size, 1.5rem)
+    var(--swiper-pagination-bullet-size, 1.2rem)
   );
   display: inline-block;
   border-radius: 50%;
