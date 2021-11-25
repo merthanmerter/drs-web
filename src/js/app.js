@@ -20,14 +20,6 @@ window.addEventListener("DOMContentLoaded", () => {
         document.getElementsByName('fixMozBlurNav')[0].classList.replace('bg-opacity-75', 'bg-opacity-100')
     }
 
-    let swiper = new Swiper(".Swiper", {
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-
     const btn = document.getElementById("toggler");
     const btnStyle = document.getElementById("togglerStyle");
     const menu = document.getElementById("mobile-menu");

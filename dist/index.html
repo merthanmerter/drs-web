@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="assets/css/swiper.css" />
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="../path/to/@themesberg/flowbite/dist/flowbite.bundle.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.1.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.1.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
     <!--/Styles-->
 
     <title>dRS</title>
@@ -126,12 +131,12 @@
 
     <main>
         <section>
+
             <div class="lg:container">
                 <!-- Swiper -->
-                <div class="swiper Swiper">
-
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                <div class="swiffy-slider">
+                    <ul class="slider-container">
+                        <li>
                             <figure class="relative min-h-75vh lg:min-h-0 lg:aspect-h-1 aspect-w-1 lg:aspect-w-2">
                                 <img class="object-cover object-center w-full h-full"
                                     src="https://www.heroal.de/B2C/Images/Stage/stage_geoffnete-Ganzglasecke-Schiebetuer_1920x700.jpg"
@@ -148,9 +153,8 @@
                                     class="inline-block px-4 py-3 mt-4 text-white transition-colors border-2 border-white hover:bg-white hover:text-drs-blue">
                                     Explore Products</a>
                             </div>
-                        </div>
-
-                        <div class="swiper-slide">
+                        </li>
+                        <li>
                             <figure class="relative min-h-75vh lg:min-h-0 lg:aspect-h-1 aspect-w-1 lg:aspect-w-2">
                                 <img class="object-cover object-center w-full h-full"
                                     src="https://www.heroal.de/B2C/Images/Stage/Architektenhaus-heroal-Produkte_1920x700.jpg"
@@ -167,10 +171,16 @@
                                     class="inline-block px-4 py-3 mt-4 text-white transition-colors border-2 border-white hover:bg-white hover:text-drs-blue">
                                     Explore Products</a>
                             </div>
-                        </div>
+                        </li>
+                    </ul>
 
+                    <button type="button" class="slider-nav"></button>
+                    <button type="button" class="slider-nav slider-nav-next"></button>
+
+                    <div class="slider-indicators">
+                        <button class="active"></button>
+                        <button></button>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
