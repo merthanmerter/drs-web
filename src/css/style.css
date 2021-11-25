@@ -18,8 +18,12 @@
   a {
     @apply transition-colors fill-current hover:text-drs-blue;
   }
-
+/* 
   main {
     @apply relative pt-16;
+  } */
+
+  .mobile-menu-animation {
+    transition: max-height 0.15s ease-out;
   }
 }

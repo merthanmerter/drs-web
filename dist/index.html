@@ -29,7 +29,7 @@
 
 <body class="text-gray-700">
     <header name="fixMozBlurNav"
-        class="fixed top-0 z-50 w-full bg-white lg:bg-opacity-75 lg:backdrop-filter lg:backdrop-blur-lg">
+        class="sticky top-0 z-50 w-full bg-white lg:bg-opacity-75 lg:backdrop-filter lg:backdrop-blur-lg">
         <nav>
             <div class="container flex items-center justify-between h-16">
                 <a href="./index.html">
@@ -102,32 +102,34 @@
             </div>
 
         </nav>
+
+        <nav class="sticky left-0 z-40 w-full h-auto overflow-hidden bg-white lg:hidden top-16 transform-gpu filter drop-shadow-md">
+            <ul class="text-center transition-all duration-700 ease-in max-h-0" id="mobile-menu">
+                <li>
+                    <a href="#" class="block py-4 text-lg border-0">Products</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-4 text-lg border-0">Quality</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-4 text-lg border-0">Digital
+                        Solutions</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-4 text-lg border-0">Company</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-4 text-lg border-0">Downloads</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-4 text-lg border-0">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
     </header>
 
-    <nav class="fixed left-0 z-40 w-full text-white transition-all duration-500 ease-in-out origin-top scale-y-0 bg-white top-16 transform-gpu filter drop-shadow-md"
-        id="mobile-menu">
-        <ul class="text-center">
-            <li>
-                <a href="#" class="block py-4 text-lg transition duration-300 border-0">Products</a>
-            </li>
-            <li>
-                <a href="#" class="block py-4 text-lg transition duration-300 border-0">Quality</a>
-            </li>
-            <li>
-                <a href="#" class="block py-4 text-lg transition duration-300 border-0">Digital
-                    Solutions</a>
-            </li>
-            <li>
-                <a href="#" class="block py-4 text-lg transition duration-300 border-0">Company</a>
-            </li>
-            <li>
-                <a href="#" class="block py-4 text-lg transition duration-300 border-0">Downloads</a>
-            </li>
-            <li>
-                <a href="#" class="block py-4 text-lg transition duration-300 border-0">Contact</a>
-            </li>
-        </ul>
-    </nav>
+
 
     <main>
         <section>
