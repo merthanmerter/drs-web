@@ -11,6 +11,7 @@ var isIE = /*@cc_on!@*/ false || !!document.documentMode;
 
 window.addEventListener("DOMContentLoaded", () => {
 
+    // window.location.href = window.location.href
 
     mobileMenuState = false
 
@@ -52,4 +53,5 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     require('@themesberg/flowbite')
+    
 })
