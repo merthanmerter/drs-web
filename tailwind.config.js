@@ -2,7 +2,7 @@
 // const mode = production ? "jit" : false;
 
 module.exports = {
-  // mode: mode,
+  // mode: 'jit',
   purge: [
     './dist/**/*.html'
   ],
@@ -33,23 +33,23 @@ module.exports = {
       colors: {
         'drs-blue': '#13a0e5',
       },
-      keyframes: {
-        wiggle: {
-          '0%, 100%': {
-            transform: 'rotate(-3deg)'
-          },
-          '50%': {
-            transform: 'rotate(3deg)'
-          },
-        }
-      },
-      animation: {
-        wiggle: 'wiggle 1s ease-in-out infinite',
-      },
-      backgroundImage: {
-        'hero-1': "url('../img/bg-hero-1.png')",
-        'hero-2': "url('../img/bg-hero-2.png')",
-      },
+      // keyframes: {
+      //   wiggle: {
+      //     '0%, 100%': {
+      //       transform: 'rotate(-3deg)'
+      //     },
+      //     '50%': {
+      //       transform: 'rotate(3deg)'
+      //     },
+      //   }
+      // },
+      // animation: {
+      //   wiggle: 'wiggle 1s ease-in-out infinite',
+      // },
+      // backgroundImage: {
+      //   'hero-1': "url('../img/bg-hero-1.png')",
+      //   'hero-2': "url('../img/bg-hero-2.png')",
+      // },
       minHeight: {
         'half-screen': '50vh',
         '75vh': '75vh',
