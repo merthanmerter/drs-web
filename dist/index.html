@@ -2,34 +2,28 @@
 <html lang="en" class="scrollbar scrollbar-thumb-gray-300 hover:scrollbar-thumb-drs-blue">
 
 <head>
+    <!--Meta-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Catche -->
+    <!--/Meta-->
+    <!--Catche-->
     <meta http-equiv='cache-control' content='no-cache'>
     <meta http-equiv='expires' content='0'>
     <meta http-equiv='pragma' content='no-cache'>
-    <!--Styles-->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--/Catche-->
+    <!--Styles & JS-->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="assets/js/bundle.min.js"></script>
-    <link rel="stylesheet" href="assets/css/swiper.css" />
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="../path/to/@themesberg/flowbite/dist/flowbite.bundle.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.1.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
-        defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.1.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
-        crossorigin="anonymous">
-    <!--/Styles-->
+    <script src="assets/js/slider.min.js" crossorigin="anonymous" defer></script>
+    <!--/Styles & JS-->
 
     <title>dRS</title>
 </head>
 
 <body class="text-gray-700">
-    <header name="fixMozBlurNav"
-        class="sticky top-0 z-50 w-full bg-white lg:bg-opacity-75 lg:backdrop-filter lg:backdrop-blur-lg">
+    <header class="sticky top-0 z-50 w-full bg-white">
         <nav>
             <div class="container flex items-center justify-between h-16">
                 <a href="./index.html">
@@ -50,7 +44,7 @@
                     </svg>
                 </a>
 
-                <ul class="hidden gap-6 lg:flex">
+                <ul class="hidden gap-6 desktop:flex">
                     <a href="#" class=" hover:text-drs-blue">
                         <li>Products</li>
                     </a>
@@ -92,7 +86,7 @@
                     </div>
                 </ul>
 
-                <button class="lg:hidden focus:outline-none">
+                <button class="desktop:hidden focus:outline-none">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" id="toggler" fill="none" viewBox="0 0 24 24"
                         stroke="#13a0e5">
                         <path id="togglerStyle" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -104,7 +98,8 @@
         </nav>
 
         <nav class="sticky h-0">
-            <ul class="left-0 z-40 w-full overflow-hidden text-center transition-transform duration-500 ease-in-out origin-top transform scale-y-0 bg-white lg:hidden top-16 filter drop-shadow-md" id="mobile-menu">
+            <ul class="left-0 z-40 w-full overflow-hidden text-center transition-transform duration-500 ease-in-out origin-top transform scale-y-0 bg-white desktop:hidden top-16 filter drop-shadow-md"
+                id="mobile-menu">
                 <li>
                     <a href="#" class="block py-4 text-lg border-t border-gray-200">Products</a>
                 </li>
@@ -134,18 +129,19 @@
     <main>
         <section>
 
-            <div class="lg:container">
+            <div class="desktop:container">
                 <!-- Swiper -->
                 <div class="swiffy-slider">
                     <ul class="slider-container">
                         <li>
-                            <figure class="relative min-h-75vh lg:min-h-0 lg:aspect-h-1 aspect-w-1 lg:aspect-w-2">
+                            <figure
+                                class="relative min-h-75vh desktop:min-h-0 desktop:aspect-h-1 aspect-w-1 desktop:aspect-w-2">
                                 <img class="object-cover object-center w-full h-full"
                                     src="https://www.heroal.de/B2C/Images/Stage/stage_geoffnete-Ganzglasecke-Schiebetuer_1920x700.jpg"
                                     alt="">
                             </figure>
                             <div
-                                class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full gap-4 px-6 text-center bg-opacity-75 lg:bg-opacity-100 bg-drs-blue lg:text-left lg:items-start lg:px-16 lg:w-1/2">
+                                class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full gap-4 px-6 text-center bg-opacity-75 desktop:bg-opacity-100 bg-drs-blue desktop:text-left desktop:items-start desktop:px-16 desktop:w-1/2">
                                 <p class="text-4xl font-bold text-white xl:whitespace-nowrap">Blinds installed outside
                                 </p>
                                 <p class="text-xl text-white">With textile sun shading from heroal, even
@@ -157,13 +153,14 @@
                             </div>
                         </li>
                         <li>
-                            <figure class="relative min-h-75vh lg:min-h-0 lg:aspect-h-1 aspect-w-1 lg:aspect-w-2">
+                            <figure
+                                class="relative min-h-75vh desktop:min-h-0 desktop:aspect-h-1 aspect-w-1 desktop:aspect-w-2">
                                 <img class="object-cover object-center w-full h-full"
                                     src="https://www.heroal.de/B2C/Images/Stage/Architektenhaus-heroal-Produkte_1920x700.jpg"
                                     alt="">
                             </figure>
                             <div
-                                class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full gap-4 px-6 text-center bg-opacity-75 lg:bg-opacity-100 bg-drs-blue lg:text-left lg:items-start lg:px-16 lg:w-1/2">
+                                class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full gap-4 px-6 text-center bg-opacity-75 desktop:bg-opacity-100 bg-drs-blue desktop:text-left desktop:items-start desktop:px-16 desktop:w-1/2">
                                 <p class="text-4xl font-bold text-white xl:whitespace-nowrap">The best quality for your
                                     home </p>
                                 <p class="text-xl text-white">With windows, doors, canopies, shutters,
@@ -189,8 +186,9 @@
 
         <section class="pt-16">
             <div class="container">
-                <div class="w-full lg:w-2/3">
-                    <h1 class="w-full pb-5 text-2xl lg:w-2/3">Windows, doors, facades, shutters, sunshades, garage doors
+                <div class="w-full desktop:w-2/3">
+                    <h1 class="w-full pb-5 text-2xl desktop:w-2/3">Windows, doors, facades, shutters, sunshades, garage
+                        doors
                         and
                         canopies by
                         drS
@@ -230,7 +228,7 @@
                 </div>
             </div>
 
-            <div class="container grid grid-cols-1 gap-4 lg:gap-8 lg:grid-cols-4">
+            <div class="container grid grid-cols-1 gap-6 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4">
                 <div>
                     <a href="#">
                         <div>
@@ -373,7 +371,7 @@
                 </div>
             </div>
 
-            <div class="container grid grid-cols-1 gap-4 lg:gap-8 lg:grid-cols-4">
+            <div class="container grid grid-cols-1 gap-6 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4">
                 <div>
                     <a href="#">
                         <figure class="aspect-w-2 aspect-h-1">
@@ -486,7 +484,7 @@
             </div>
 
             <div class="container">
-                <div class="grid w-full grid-cols-1 gap-8 lg:w-1/2 lg:grid-cols-2">
+                <div class="grid w-full grid-cols-1 gap-8 desktop:w-1/2 tablet:grid-cols-2 desktop:grid-cols-2">
 
                     <div>
                         <a href="#">
@@ -501,7 +499,8 @@
                                 </div>
                                 <div class="py-1">
 
-                                    <p class="line-clamp-4 lg:line-clamp-none">Lorem ipsum dolor sit amet consectetur,
+                                    <p class="line-clamp-4 desktop:line-clamp-none">Lorem ipsum dolor sit amet
+                                        consectetur,
                                         adipisicing elit. Voluptatem
                                         mollitia error dolore quo, veniam similique sequi, quibusdam deleniti explicabo
                                         blanditiis voluptate repellendus quos rerum! Repellendus dignissimos accusamus
@@ -525,7 +524,8 @@
                                     <h3 class="pt-2 text-lg font-bold">Villa in Sint-Martens-Latem </h3>
                                 </div>
                                 <div class="py-1">
-                                    <p class="line-clamp-4 lg:line-clamp-none">Lorem ipsum dolor sit amet consectetur
+                                    <p class="line-clamp-4 desktop:line-clamp-none">Lorem ipsum dolor sit amet
+                                        consectetur
                                         adipisicing elit. Labore officia
                                         neque minima similique provident ut asperiores voluptas, reprehenderit
                                         doloremque.
@@ -549,12 +549,16 @@
                         <input type="email" name="newsletter" id="newsletter" placeholder="Your e-mail" class="
                         mt-0
                         block
-                        w-1/2
+                        desktop:w-1/2
+                        laptop:w-1/2
+                        tablet:w-full
+                        w-full
                         px-0.5
                         border-0 border-b border-gray-200
                         focus:ring-0 focus:border-drs-blue
                         focus:transition-colors
-                        bg-transparent">
+                        bg-transparent
+                        ">
                         <label class="cursor-pointer">
                             <input type="submit" value="" class="hidden">
                             <div
@@ -573,11 +577,15 @@
 
         </section>
 
+        <section>
+
+        </section>
+
     </main>
 
     <footer class="pt-16 bg-white">
         <div class="container">
-            <div class="flex flex-wrap items-end justify-between gap-10 py-4 text-sm">
+            <div class="flex flex-wrap items-end justify-between gap-10 py-4 tablet:text-sm">
                 <div class="flex items-end gap-10">
                     <ul class=" flex flex-col gap-1.5">
                         <li><a href="#">Products</a></li>
@@ -596,7 +604,7 @@
 
                 </div>
 
-                <ul class="flex flex-col gap-1.5 lg:text-right">
+                <ul class="flex flex-col gap-1.5 tablet:text-right">
                     <li class="w-25ch">
                         <p>Tilo-Römer-Platz 4 </p>
                         <p>Waren (Müritz) / Germany</p>
@@ -618,13 +626,13 @@
 
             </div>
 
-            <div class="flex flex-wrap justify-between gap-2 py-4 border-t ">
-                <div class="flex items-center gap-5 text-xs">
+            <div class="flex flex-wrap justify-between gap-2 py-4 text-sm border-t tablet:text-xs">
+                <div class="flex items-center gap-5">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Privacy Settings</a>
                 </div>
 
-                <div class="flex items-center gap-5 text-xs">
+                <div class="flex items-center gap-5">
                     <p>© 2021 dRS Aluminium Systems</p>
                 </div>
 
